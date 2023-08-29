@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* apply fonfamily for all of the page */
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+    background-color: #efeadd;
+}
+header{
+    
+    background-color:#66523c;
+    /* font-family: 'Ruwudu', serif; */
+    height: 160px;
+    font-size: 57px;
+    display: flex;
+    justify-content: center;
+    text-align: -webkit-match-parent;
+    box-shadow: rgba(100, 64, 28, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+header p{
+    color: #392c18;
+    margin-top: 36px;
+    font-size: 77px;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+header img{
+    margin-right: 1350px;
+    margin-top: 20px;
+    width: 200px;
+    margin-bottom: 70px;
+    margin-left: 50px;
+    height: 130px;
+    mix-blend-mode: color-burn;
+}
+
+.navbar{
+    background-color: #e0d8c4;
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: rgba(100, 64, 28, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.nav{
+    list-style: none;
+    display: flex;
+    height: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  
+}
+.nav li{
+    margin-right: 30px;
+    margin-top: 8px;
+    
+
+}
+.nav li a{
+    text-decoration: none;
+    color: #392c18;
+    
+}
+.nav li a:hover{
+    color: #52442e;
+    font-size: 1.25rem;
+    transition: 0.3s;
+
+}
+
+
+
+#pageTitle{
+    border: 2px transparent;
+    background-image: url(../media/صورة\ واتساب\ بتاريخ\ 1445-02-11\ في\ 22.15.32.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1.2rem;
+    margin-bottom: 100px;
+    color: #333;
+    box-shadow: rgba(100, 64, 28, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  h1{
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  article {
+      --img-scale: 1.001;
+      --title-color: #333;
+      --link-icon-translate: -20px;
+      --link-icon-opacity: 0;
+      position: relative;
+      border-radius: 16px;
+      box-shadow: none;
+      background:#ddd9ca;
+      transform-origin: center;
+      transition: all 0.4s ease-in-out;
+      overflow: hidden;
+    }
+    
+    article a::after {
+      position: absolute;
+      inset-block: 0;
+      inset-inline: 0;
+      cursor: pointer;
+      content: "";
+    }
+    
+    /* basic article elements styling */
+    article h2 {
+      margin: 0 0 18px 0;
+      font-family: "Bebas Neue", cursive;
+      font-size: 1.9rem;
+      letter-spacing: 0.06em;
+      color: var(--title-color);
+      transition: color 0.3s ease-out;
+    }
+    
+    figure {
+      margin: 0;
+      padding: 0;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+    }
+    
+    article img {
+      max-width: 100%;
+      transform-origin: center;
+      transform: scale(var(--img-scale));
+      transition: transform 0.4s ease-in-out;
+    }
+    
+    .article-body {
+      padding: 24px;
+    }
+    
+    article a {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      color: #090c00;
+    }
+    
+    article a:focus {
+      outline: 1px dotted #080a00;
+    }
+    
+    article a .icon {
+      min-width: 24px;
+      width: 24px;
+      height: 24px;
+      margin-left: 5px;
+      transform: translateX(var(--link-icon-translate));
+      opacity: var(--link-icon-opacity);
+      transition: all 0.3s;
+    }
+    
+    /* using the has() relational pseudo selector to update our custom properties */
+    article:has(:hover, :focus) {
+      --img-scale: 1.1;
+      --title-color: #faf6f6;
+      --link-icon-translate: 0;
+      --link-icon-opacity: 1;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    
+    
+    /************************ 
+    Generic layout (demo looks)
+    **************************/
+    
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: "Figtree", sans-serif;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      min-height: 100vh;
+    }
+    
+    .articles {
+      display: grid;
+      max-width: 1200px;
+      margin-inline: auto;
+      padding-inline: 24px;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    
+    @media screen and (max-width: 960px) {
+      article {
+        container: card/inline-size;
+      }
+      .article-body p {
+        display: none;
+      }
+    }
+    
+    @container card (min-width: 380px) {
+      .article-wrapper {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 16px;
+      }
+      .article-body {
+        padding-left: 0;
+      }
+      figure {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      figure img {
+        height: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+      }
+    }
+    
+    .sr-only:not(:focus):not(:active) {
+      clip: rect(0 0 0 0); 
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap; 
+      width: 1px;
+    }
+
+
+    /*************************************footer styling**************************************/
+.footer{ 
+    background:#5d4a35; 
+    padding:30px 0px; 
+    text-align:center; 
+    margin-top: 100px;
+} 
+footer a{
+    text-decoration: none;
+    color: #cad2c5;
+}  
+footer a:hover{
+    color: #b3a896;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}  
+.footer .row{ 
+    width:100%; 
+    margin:1% 0%; 
+    padding:0.6% 0%; 
+    color: #cad2c5; 
+    font-size:0.8em; 
+} 
+     
+.footer .row a{ 
+    text-decoration:none; 
+    color:#cad2c5; 
+    transition:0.6s; 
+} 
+     
+.footer .row a:hover{ 
+    color:#e0d7c9 ;
+} 
+     
+.footer .row ul{ 
+    width:100%; 
+    text-align: center; 
+    font-size: larger; 
+    border-spacing: 50px; 
+} 
+.footer .row ul li{ 
+    display:inline-block; 
+    margin:0px 30px; 
+} 
+     
+.footer .row a i{ 
+    font-size:2.1em; 
+    margin:0% 1%; 
+} 
+     
+@media (max-width:720px){ 
+    .footer{ 
+    text-align:left; 
+    padding:5%; 
+} 
+.footer .row ul li{ 
+    display:block; 
+    margin:10px 0px; 
+    text-align:center; 
+    margin-right: 8px; 
+} 
+.footer .row a i{ 
+    margin:0% 3%; 
+    text-align: center; 
+} 
+}
+/***************************************************************************/

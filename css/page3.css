@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* apply fonfamily for all of the page */
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #efeadd;
+}
+header{
+    
+    background-color:#66523c;
+    height: 160px;
+    font-size: 57px;
+    display: flex;
+    justify-content: center;
+    text-align: -webkit-match-parent;
+    box-shadow: rgba(100, 64, 28, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+header p{
+    color: #392c18;
+    margin-top: 36px;
+    font-size: 77px;
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+header img{
+    margin-right: 1350px;
+    margin-top: 20px;
+    width: 200px;
+    margin-bottom: 70px;
+    margin-left: 50px;
+    height: 130px;
+    mix-blend-mode: color-burn;
+}
+
+.navbar{
+    background-color: #e0d8c4;
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: rgba(100, 64, 28, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.nav{
+    list-style: none;
+    display: flex;
+    height: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  
+}
+.nav li{
+    margin-right: 30px;
+    margin-top: 8px;
+    
+
+}
+.nav li a{
+    text-decoration: none;
+    color: #392c18;
+    
+}
+.nav li a:hover{
+    color: #52442e;
+    font-size: 1.25rem;
+    transition: 0.3s;
+
+}
+
+
+#pageTitle{
+    border: 2px transparent;
+    background-image: url(../media/pexels-francesco-ungaro-998635.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 1.8rem;
+    margin-bottom: 150px;
+    color: #333;
+    box-shadow: rgba(100, 64, 28, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#nav{
+    border: 2px solid #66523c;
+    height: 150px;
+    background-color: #66523c;
+    margin-bottom: 10px;
+}
+
+
+/**********************************main title*****************************************/
+/* page title */
+.title1 h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    color: #333;
+}
+
+/***************************************************************************/
+
+
+
+/*************************************all about main cards of the page style**************************************/
+/* container 1 (has the horse gaits cards) */
+.container1{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 90px;
+}
+
+
+/* cards  */
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #ddd9ca;
+    border-radius: 5px;
+    border-color: #ddd9ca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* cards hover */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+
+/* main title of the card (before the hover) */
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+/* this contains the card content when hover is done */
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ddd9ca;
+    transform: rotateX(-90deg);
+    border-color: #ddd9ca;
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* this allows the card content to appear when hover is done */
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+  
+
+
+/* description inside the card */
+.card__description {
+    margin: 10px 0 0;
+    font-size: 20px;
+    color: #757474;
+}
+/***************************************************************************/
+
+
+
+
+
+/**********************************img and title style*****************************************/
+/* h2 editing */
+.clarifingimg{
+    margin-top: -635px;
+}
+
+#clarify h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+   
+}
+
+/* display flex applied to the img */
+.imgCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+/***************************************************************************/
+
+
+/*************************************seat variation card and sport types cards**************************************/
+.title3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    color: #333;
+}
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 120px;
+
+}
+
+.card2 {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #b1ad9f;
+    border-radius: 5px;
+    overflow: hidden;
+    perspective: 1000px;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* cards hover */
+.card2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #bebaac;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__title2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.card2:hover .card__content2 {
+    transform: rotateX(0deg);
+}
+
+/***************************************************************************/
+
+
+/************************************commenting section style***************************************/
+#comment h2{
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 100px;
+    font-size: 2rem;
+    color: #333;
+}
+
+div #comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:100vh;
+    width: 100%;
+
+}
+
+form #commenting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    height:300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid ;
+    outline: none;
+    padding: 10px;
+    width: 40%;
+    height: 35px;
+    margin-right: 420px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #ddd9ca;
+}
+
+
+button[type="submit"] {
+    border:none;
+    outline:none;
+    padding: 10px 20px ;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s;
+    margin-right: 5px;
+    height: 50px;
+    font-size: 1rem;
+    background-color: #9e9a8d;
+    
+}
+
+button[type="submit"]:hover{
+    background-color: #b1ad9f;
+    color: azure;
+}
+
+#newcomment{
+    list-style: none;
+    border: none;
+    border-bottom: 2px solid ;
+    outline: none;
+    padding: 10px;
+    width: 40%;
+    height: 35px;
+    margin-right: 420px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+#delcomment{
+    border:none;
+    outline:none;
+    padding: 5px 10px ;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s;
+    margin-right: 5px;
+    height: 25px;
+    font-size: 1rem;
+    background-color: #9e9a8d;
+    margin-right: 10px;
+}
+
+/***************************************************************************/
+
+
+/*************************************footer styling**************************************/
+.footer{ 
+    background:#5d4a35; 
+    padding:30px 0px; 
+    text-align:center; 
+    margin-top: 100px;
+} 
+footer a{
+    text-decoration: none;
+    color: #cad2c5;
+}  
+footer a:hover{
+    color: #b3a896;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}  
+.footer .row{ 
+    width:100%; 
+    margin:1% 0%; 
+    padding:0.6% 0%; 
+    color: #cad2c5; 
+    font-size:0.8em; 
+} 
+     
+.footer .row a{ 
+    text-decoration:none; 
+    color:#cad2c5; 
+    transition:0.6s; 
+} 
+     
+.footer .row a:hover{ 
+    color:#e0d7c9 ;
+} 
+     
+.footer .row ul{ 
+    width:100%; 
+    text-align: center; 
+    font-size: larger; 
+    border-spacing: 50px; 
+} 
+.footer .row ul li{ 
+    display:inline-block; 
+    margin:0px 30px; 
+} 
+     
+.footer .row a i{ 
+    font-size:2.1em; 
+    margin:0% 1%; 
+} 
+     
+@media (max-width:720px){ 
+    .footer{ 
+    text-align:left; 
+    padding:5%; 
+} 
+.footer .row ul li{ 
+    display:block; 
+    margin:10px 0px; 
+    text-align:center; 
+    margin-right: 8px; 
+} 
+.footer .row a i{ 
+    margin:0% 3%; 
+    text-align: center; 
+} 
+}
+/***************************************************************************/
+
+
+
+
